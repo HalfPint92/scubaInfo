@@ -1,0 +1,325 @@
+/***** general styling across all pages *****/
+/* creating a gradient for the navbar */
+.navbar {
+    background: linear-gradient(lightskyblue, #0094b9);
+}
+
+/* styling for the company name */
+.navbar-store-name {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: black;
+    font-size: 40px;
+    font-weight: bolder;
+    padding: 2%;
+    position: absolute;
+    left: 15%;
+    display: block;
+}
+
+/* making the logo circular with sizing */
+.logo {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-left: 5%;
+}
+
+/* styling and positioning for the links in the navbar */
+.navbar-nav {
+    justify-content: space-between;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+}
+
+.navbar-nav li:nth-child(4) a {
+    white-space: nowrap;
+}
+
+
+/***** index page styling *****/
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    position: relative;
+    display: block;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px;
+}
+
+/* styling for the boxes */
+.container {
+    width: 100%;
+    max-width: auto;
+    margin: 0 auto;
+    /* to center the columns*/
+    display: flex;
+    justify-content: center;
+    /* this is to make both boxes the same length */
+    flex-direction: row;
+    align-items: stretch;
+}
+
+.item {
+    margin: 10px auto;
+    display: block;
+}
+
+.item img {
+    width: 500px;
+}
+
+.item button.save-button {
+    background-color: lightskyblue;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.item button.save-button:hover {
+    background-color: #0094b9;
+}
+
+.item button.save-button,
+.item form button[type="submit"] {
+    margin-top: 5px;
+    margin-left: 30px;
+}
+
+.column {
+    /* to create space between columns */
+    width: 45%;
+    float: inline-start;
+    box-sizing: border-box;
+    padding: 20px;
+    margin-right: 5px;
+    margin-left: 5px;
+    background-color: lightskyblue;
+}
+
+.column h2 {
+    margin-top: 0;
+}
+
+.footer-home {
+    background: linear-gradient(lightskyblue, #0094b9);
+    /* set left and right margins to auto to center the element */
+    text-align: center;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.diver-quote-image {
+    display: block;
+    margin: 0 auto;
+    border-radius: 25%;
+}
+
+/* quote styling */
+blockquote {
+    font-style: italic;
+    padding: 10px;
+}
+
+cite {
+    display: block;
+    margin-top: 10px;
+    font-style: normal;
+    font-weight: bold;
+}
+
+
+/***** about page styling *****/
+.heading-about {
+    text-align: center;
+    font-weight: bolder;
+}
+
+/* table */
+table {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    background-color: lightskyblue;
+    table-layout: fixed;
+}
+
+td {
+    padding: 10px;
+    text-align: justify;
+    width: 30%;
+    vertical-align: top;
+}
+
+th {
+    background-color: #f2f2f2;
+    color: darkslategray;
+    font-weight: bold;
+    text-align: center;
+}
+
+.footer-about {
+    background: linear-gradient(lightskyblue, #0094b9);
+    /* set left and right margins to auto to center the element */
+    text-align: center;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/***** styling for certifications page ******/
+.heading-cert {
+    text-align: center;
+    font-weight: bolder;
+}
+
+/* radio button form styling*/
+input[type="radio"] {
+    appearance: none;
+    border: 2px solid black;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    margin: 0 5px 0 0;
+    padding: 0;
+    position: relative;
+    top: 5px;
+}
+
+input[type="radio"]:checked:before {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    right: 3px;
+    bottom: 3px;
+    border-radius: 50%;
+    background-color: midnightblue;
+}
+
+.cert-btn {
+    margin-top: 5px;
+    margin-left: 30px;
+}
+
+.footer-cert {
+    background: linear-gradient(lightskyblue, #0094b9);
+}
+
+.logo-btm-cert {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+/* Button styling */
+.save-button,
+button[type="submit"] {
+    background-color: lightskyblue;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.save-button:hover,
+button[type="submit"]:hover {
+    background-color: #0094b9;
+}
+
+/* Form styling */
+form {
+    display: inline;
+    margin: 0;
+}
+
+/* Saved For Later */
+.saved-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.saved-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.saved-image {
+    width: 200px;
+    height: auto;
+    max-height: 100px;
+    object-fit: cover;
+}
+
+.delete-button {
+    margin-top: 10px;
+    
+}
+
+.saved-description {
+    margin-top: 10px;
+}
+
+.heading-saved {
+    text-align: center;
+    font-weight: bolder;
+}
+
+#comment-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Style the heart icon */
+.heart-icon {
+    color: pink;
+    cursor: pointer;
+}
+
+/* Style the heart icon when it's filled */
+.heart-icon.filled {
+    color: red;
+}
+
+
+/* Button styles */
+.save-button,
+button[type="submit"],
+.delete-button {
+    background-color: lightskyblue;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+}
+
+.save-button:hover,
+button[type="submit"]:hover,
+.delete-button:hover {
+    background-color: #0094b9;
+}
+
+.comment {
+    position: relative;
+    margin-bottom: 10px;
+}
