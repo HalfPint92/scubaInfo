@@ -1,6 +1,6 @@
 // Form for comments on Certifications page
 // Form to like an image displayed by clickable hearts that fill when clicked
-//Form for contact on About page in footer
+//Form for contact on Certications page in footer
 
 
 
@@ -168,7 +168,6 @@ const commentForms = document.querySelectorAll('.comment-form');
 commentForms.forEach(commentForm => {
   commentForm.addEventListener('submit', handleCommentSubmission);
 });
-
 
 
 
